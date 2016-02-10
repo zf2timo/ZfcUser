@@ -1,10 +1,11 @@
 {
     "name": "zf-commons/zfc-user",
-    "description": "A generic user registration and authentication module for ZF2. Supports Zend\\Db and Doctrine2.",
+    "description": "A generic user registration and authentication module for ZF2. Supports multiple adapters with built-in support for Zend\\Db.",
     "type": "library",
     "license": "BSD-3-Clause",
     "keywords": [
-        "zf2"
+        "zf2",
+        "authentication"
     ],
     "homepage": "https://github.com/ZF-Commons/ZfcUser",
     "authors": [
@@ -17,11 +18,16 @@
             "name": "Kyle Spraggs",
             "email": "theman@spiffyjr.me",
             "homepage": "http://www.spiffyjr.me/"
+        },
+        {
+            "name": "Daniel Strøm",
+            "email": "ds@eye4web.dk",
+            "homepage": "http://eye4web.dk/"
         }
     ],
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1.x-dev"
+            "dev-master": "2.0.x-dev"
         }
     },
     "require": {
@@ -39,16 +45,11 @@
         "zendframework/zend-stdlib": "~2.1",
         "zendframework/zend-validator": "~2.1",
         "zendframework/zend-view": "~2.1",
-        "zf-commons/zfc-base": "0.*"
+        "zf-commons/zfc-base": "~0.1.0"
     },
     "require-dev" : {
-        "phpmd/phpmd" : "1.4.*",
         "phpunit/phpunit" : ">=3.7,<4",
-        "squizlabs/php_codesniffer" : "1.4.*",
-        "zendframework/zend-captcha" : "~2.1"
-    },
-    "suggest": {
-        "zendframework/zend-captcha" : "Zend\\Captcha if you want to use the captcha component"
+        "squizlabs/php_codesniffer" : "1.4.*"
     },
     "autoload": {
         "psr-0": {
